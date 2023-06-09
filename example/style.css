@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}.click{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: rgb(81, 0, 255);
+}button{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    color: rgb(45, 82, 82);
+    font-size: 20px;
+    font-weight: bold;
+}button:hover{
+    background-color: aquamarine;
+}

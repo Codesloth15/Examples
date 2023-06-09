@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(228, 142, 29);">
+    <h1 id="click">
+        Hello this is javaScript
+
+    </h1>
+    <button id="bu" onclick="justclick()">
+       change BC
+    </button>
+    <button onclick="justclick1()">
+        this box color
+    </button>
+    <button onclick="justclick2()">
+        change text
+    </button>
+    <button onclick="justclick3()">
+        choose a color
+    </button>
+    <br>
+    <br>
+    <div id="container">
+
+        <h1>
+            Yellow Text
+        </h1>
+        <p>
+            White Text
+        </p>
+
+
+        <br>
+        <h1>
+            Yellow Text
+        </h1>
+        <p>
+            White Text
+        </p>
+
+
+    </div>
+    <br>
+    <div id="container">
+        <h1>
+            To Do List
+        </h1>
+        <h2>
+            Monday
+        </h2>
+
+        <p>
+            Do these things today!
+        </p>
+
+        <ul>
+            <li>Wash Clothes</li>
+            <li class="seagreen">Read</li>
+            <li class="seagreen">Code</li>
+        </ul>
+        <ul>
+            <p>other items</p>
+        </ul>
+    </div>
+    <style>
+        #container {
+            width: 600px;
+            border: solid 10px rgb(79, 4, 79);
+            padding: 10px;
+            background-color: rgb(77, 77, 160);
+        }
+
+        h1 {
+            color: white;
+            margin: 0%;
+        }
+
+        p {
+            background-color: red;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            margin: 0%;
+        }
+
+        .x {
+            display: inline;
+            width: 100%;
+            padding: 0%;
+            background-color: bisque;
+
+        }
+
+        ul .seagreen {
+            color: seagreen;
+        }
+    </style>
+    <script>
+    
+        function justclick() {
+        var x=["yellow","red","blue"];
+    
+        var y = Math.floor(Math.random() * 3);
+            document.body.style.backgroundColor =x[y];
+        setInterval(justclick, 5000);
+        }
+       
+        function justclick1() {
+            var x=["yellow","green","blue"];
+        var y = Math.floor(Math.random() * 3);
+        alert(x[y]);
+            document.getElementById("container").style.backgroundColor = x[y];
+        }
+        function justclick2() {
+            const x = prompt("Input Text Here...");
+            document.getElementById("click").innerHTML =x;
+         
+
+        }
+        function justclick3() {
+            var x = prompt("choose a color");
+            document.getElementById("click").style.color = x;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
